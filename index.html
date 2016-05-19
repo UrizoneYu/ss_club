@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>Special Speaking Club @U.Tsukuba</title>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="description" content="筑波大学">
+    <meta name="keywords" content="">
+<!--    <link rel="shortcut icon" href="http://inolab.slis.tsukuba.ac.jp/img/favicon.ico">
+    <link rel="apple-touch-icon" href="http://inolab.slis.tsukuba.ac.jp/img/iphone.png"/>-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="./css/sanitize.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-- jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> <!-- cookie操作プラグイン -->
+
+</head>
+<body id="top">
+
+<!-- ヘッダー  -->
+<header>
+    <div class="header_logo">
+        <div class="content_width">
+        <h1 href=""><br>SPECIAL SPEAKING CLUB</h1>
+        </div>
+    </div>
+    <style type="text/css">
+
+        h1 {color: white;
+            font-size: 24px;
+           }
+    </style>
+    <!-- menu -->
+    <nav><div class="content_width">
+
+        <div class="accordion"><p>
+            <a class="menu-trigger" href="#">
+                <span></span><span></span><span></span>
+            </a>
+            MENU
+        </p></div>
+
+
+        <ul class="main_menu">
+            <li><a class="home" href="./index.html">HOME</a></li>
+            <li><a class="members" href="./members.html">MEMBERS</a></li>
+            <li><a class="event" href="./event.html">EVENT</a></li>
+        </ul>
+    </div></nav>
+
+
+
+</header>
+
+<!-- コンテンツ部分 -->
+
+<div class="key">
+    <p class="jp"><span>Special Speaking Club へ よ う こ そ ！</span>
+        <br>***************************************
+    *******************************************
+    *****************************************</p>
+
+
+</div>
+
+<div class="content_width">
+
+ <!--   <div class="card">
+        &lt;!&ndash;<h2>Open Lab.</h2>&ndash;&gt;
+        <img src="members/2014/img/yuruizheng.jpg" alt="top" class ="" height="500" width="700" >
+        <br/>
+        <br/>
+        <p class="jp">現在予定されているオープンラボはありません。いつでもお気軽にご見学に来てください！</p>
+    </div>-->
+    <!--效果html开始-->
+    <div class="slider">
+        <ul>
+            <li><a target="_blank"><img src="img/2015052201.JPG" alt=""></a></li>
+            <li><a href="" target="_blank"><img src="img/2015052202.JPG" alt=""></a></li>
+            <li><a target="_blank"><img src="img/2016040601.JPG" alt=""></a></li>
+            <!--<li><a target="_blank"><img src="img/2016040602.JPG" alt=""></a></li>-->
+        </ul>
+    </div>
+    <script type="text/javascript" src="js/yxMobileSlider.js"></script>
+    <script>
+        $(".slider").yxMobileSlider({width:400,height:330,during:3000})
+    </script>
+    <!--效果html结束-->
+    <!--<div id=demo style="overflow:hidden;height:300px;width:400px;">
+        <table align=left cellpadding=0 cellspace=0 border=0>
+            <tr>
+                <td id=demo1 valign=top>
+                    <img src="img/1.jpg">
+                    <img src="img/2.jpg">
+                    <img src="img/3.jpg">
+                </td>
+                <td id=demo2 valign=top>
+
+                </td>
+            </tr>
+        </table>
+    </div>-->
+    <!--<script>
+        var speed=30
+        demo2.innerHTML=demo1.innerHTML
+        function Marquee(){
+            if(demo2.offsetWidth-demo.scrollLeft<=0)
+                demo.scrollLeft-=demo1.offsetWidth
+            else{
+                demo.scrollLeft++
+            }
+        }
+        var MyMar=setInterval(Marquee,speed)
+        demo.onmouseover=function() {clearInterval(MyMar)}
+        demo.onmouseout=function() {MyMar=setInterval(Marquee,speed)}
+    </script>-->
+    <div class="card">
+        <h2>勉強会の紹介：</h2>
+        <p class="jp">************************************
+            **********************************
+            **********************************<br>
+            ********************************************************************
+
+         </p>
+        <!--<p class="en" style="display:none">Motivated candidates for the graduate school and the research students are welcome regardless of nationality or any other distinction. Feel free to contact the lab director by email.</p>-->
+        <hr>
+        <!--<a href=""><p class="raquo">Contact us &raquo;</p></a>-->
+    </div>
+    <div class="card">
+    <h2>Join us</h2>
+    <p class="jp">************************************
+        **************************<br>
+        少し覗いてみたい人も、日本語レベル問わず歓迎します。
+        まずは、お気軽にご連絡ください。</p>
+    <!--<p class="en" style="display:none">Motivated candidates for the graduate school and the research students are welcome regardless of nationality or any other distinction. Feel free to contact the lab director by email.</p>-->
+    <hr>
+    <!--<a href=""><p class="raquo">Contact us &raquo;</p></a>-->
+</div>
+
+
+
+
+
+</div> <!-- end of content-width -->
+
+
+<script>$(function() { $(".home").addClass('current'); });</script>
+
+<!-- フッター -->
+<footer><div class="content_width">
+
+    <p><small>Special Speaking Club. 2016</small></p>
+
+</div></footer>
+
+
+<!-- アコーディオンメニュー -->
+<script>
+    $(function(){
+        $("nav div.accordion").on("click", function() {
+            $(this).next().slideToggle();
+            $('header').toggleClass('active'); // class付与/削除
+        });
+    });
+</script>
+<!-- 言語切替 -->
+<script type="text/javascript" src="http://inolab.slis.tsukuba.ac.jp/js/lang.js"></script>
+<a href="#top" id="pagetop"><div class="triangle"></div></a>
+<script type="text/javascript" src="http://inolab.slis.tsukuba.ac.jp/js/pagetop.js"></script>
+
+</body>
+
+</html>
